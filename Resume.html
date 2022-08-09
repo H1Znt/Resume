@@ -6,104 +6,115 @@
     <meta name="keywords" content="andrey, resume, maximov">
     <meta name="description" content="This site is Andrey maksimov's resume">
     <title>Resume</title>
-    <style>
-        img {
-            border-radius: 30px;
-        }
-        a {
-            color: black; 
-            text-decoration: none; 
-         }
-        a:hover {
-             text-decoration: underline; 
-        } 
-        a:active  {
-             color: red;
-        }
+  
+    <link rel="stylesheet" href="styless.css">
 
-        button {
-            color: black;
-            padding: 10px 20px;
-        }
-    </style>
 </head>
     <body>
-        <img src="Andr.jpg" alt="Photo" width="250px">
+        <div class="container">
+            <div class="info">
+                <img class="ava" src="Andr.jpg" alt="Photo">
 
-        <h1><strong>Maximov Andrey</strong> </h1>
-        
-        <p>I'm a student of a <strong>teh coollege </strong>
-            and work at <strong>KAMAZ</strong></p>
+                <div class="info-text">
 
-        <p>I like to <em>play footbal and play guitar</em></p>
+                    <h1><strong>Maximov Andrey</strong> </h1>
+                    
+                    <p>I'm a student of a <strong>teh coollege </strong>
+                        and work at <strong>KAMAZ</strong></p>
 
-        <h2>Social network:</h2>
-        <a href="http://instagram.com" target="_blank">Instagram</a>
-        |
-        <a href="http://t.me" target="_blank">Telegram</a>
-        |
-        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                    <p>I like to <em>play footbal and play guitar</em></p>
 
-        <h2>My Hobbies</h2>
-        <ol>
-            <li>Trevelling</li>
-            <li>Football</li>
-            <li>Swim</li>
-            <li>Run</li>
-        </ol>
+                    <h2>Social network:</h2>
+                    <a href="http://instagram.com/_kakoy.esti_" target="_blank">Instagram</a>
+                    |
+                    <a href="https://web.telegram.org/k/#@H1Znt" target="_blank">Telegram</a>
+                    |
+                    <a href="https://www.youtube.com/" target="_blank">YouTube</a>
 
-        <h2>Football clubs</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Position</th>
-                    <th>Year</th>
-                </tr>
-            </thead>
-              <tbody> 
-                <tr>
-                    <td>Victoria</td>
-                    <td>Goalkeeper</td>
-                    <td>2018-2019</td>
-                </tr>
-                <tr>
-                    <td>Monte Carlo</td>
-                    <td>Goalkeeper</td>
-                    <td>2019-2020</td>
-                </tr>
-                <tr>
-                    <td>VELES</td>
-                    <td>Goalkeeper</td>
-                    <td>2020-now</td>
-                </tr>
-              </tbody>
-        </table>
-
-        <h1>Contact me</h1>
-        
-        <form action="/">
-            <div style="margin-bottom: 10px;">
-                <label for="Name">Your name:</label>
-                <input type="text" id="Name" placeholder="Enter a name">
+                </div>
             </div>
 
-            <div style="margin-bottom: 10px;">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" placeholder="Put a mail">
+            <div class="card-01 bg-red">
+                <h2>My Hobbies</h2>
+                <ol>
+                    <li>Trevelling</li>
+                    <li>Football</li>
+                    <li>Swim</li>
+                    <li>Run</li>
+                </ol>
             </div>
 
-            <div>
-                <label for="text">Your message:</label>
-                <br>
-                <textarea id="text" cols="25" rows="5"></textarea>
+            <div class="card-02 bg-yellow">
+                <h2>Football clubs</h2>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Title</td>
+                            <td>Position</td>
+                            <td>Year</td>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>Victoria</td>
+                            <td>Goalkeeper</td>
+                            <td>2017-2019</td>
+                        </tr>
+                        <tr>
+                            <td>Monte Carlo</td>
+                            <td>Goalkeeper</td>
+                            <td>2019-2020</td>
+                        </tr>
+                        <tr>
+                            <td>VELES</td>
+                            <td>Goalkeeper</td>
+                            <td>2020-now</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <!-- <input type="suibmit" value="Enter!"> -->
-            <button type="submit">Enter!</button>
+            <div class="card-03 bg-green">
+                <h2>My College</h2>
 
-        </form>
+                <ul>
+                    <li><a href="https://tehcoll.org/" target="_blank">College</a></li>
+                    <li><a href=https://moodle.org/? target="_blank">Moodle</a></li>
+                </ul>
+
+            </div>
+
+            <div class="contact">
+                <h2>Contact me</h2>
+                
+                <form action="/">
+
+                    <div class="form-group">
+
+                        <div class="form">
+                            <label for="Name">Your name:</label>
+                            <input type="text" id="Name" placeholder="Enter a name">
+                        </div>
+
+                        <div class="form">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" placeholder="Enter an email">
+                        </div>
+
+                    </div>
+
+                    <div class="form">
+                        <label for="text">Your message:</label>
+                        <textarea id="text" cols="25" rows="5" placeholder="Enter a message..."></textarea>
+                    </div>
+
+                    <!-- <input type="suibmit" value="Enter!"> -->
+                    <button class="btn" type="submit">Enter</button>
+                </form>
+            </div>
+
+        </div>
     </body>
-    <div style="margin-bottom: 500px;"></div>
+    <div style="margin-bottom: 300px;"></div>
 </html>
