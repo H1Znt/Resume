@@ -2,4 +2,4 @@
 
 ## Result:
 
-[First Work](https://h1znt.github.io/Resume/)
+[First Work]()
